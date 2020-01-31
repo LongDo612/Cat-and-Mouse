@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/cat.js"></script>
+    <script src="js/mouse.js"></script>
+</head>
+<body>
+    <script>
+        let cat = new Cat("Tom", 5, 40);
+        let mouse1 = new Mouse("Jerry", 1, 35, true);
+        let mouse2 = new Mouse("Xavier", 1, 35, false);
+        alert("Tom is chasing a rat! His weight is: " +cat.weight);
+        cat.say();
+        mouse1.say();
+        cat.chaseMouse(mouse1);
+        cat.chaseMouse(mouse1);
+        alert("Another dead rat! Will tom eat it?");
+        cat.chaseMouse(mouse2);
+    </script>
+</body>
+</html>
